@@ -1,10 +1,4 @@
-import {
-  IsOptional,
-  ValidateNested,
-  IsArray,
-  IsDefined,
-  ValidateIf,
-} from 'class-validator';
+import { IsOptional, ValidateNested, IsArray, IsDefined, ValidateIf } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ConditionDTO } from './condition.dto';
 import { LoopActionDTO } from './actions-dto/loop-action.dto';
