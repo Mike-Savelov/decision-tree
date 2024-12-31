@@ -1,10 +1,15 @@
-import { IsOptional, ValidateNested, IsArray, IsDefined, ValidateIf } from 'class-validator';
+import {
+  IsOptional,
+  ValidateNested,
+  IsArray,
+  IsDefined,
+  ValidateIf,
+} from 'class-validator';
 import { Type } from 'class-transformer';
 import { ConditionDTO } from './condition.dto';
 import { LoopActionDTO } from './actions-dto/loop-action.dto';
 import { SendEmailActionDTO } from './actions-dto/send-email-action.dto';
 import { SendSMSActionDTO } from './actions-dto/send-sms-action.dto';
-import { Action } from '../helpers/types';
 
 type ActionDTO = SendSMSActionDTO | SendEmailActionDTO | LoopActionDTO;
 

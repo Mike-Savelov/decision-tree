@@ -22,7 +22,7 @@ export class ActionOperator {
   executeLoop(data: executeLoop): string {
     const { name, iterations, loopBranch } = data;
 
-    let res = `Executing loop ${iterations} times \n`;
+    let res = `Executing loop ${name} ${iterations} times \n`;
     for (let i = 0; i < iterations; i++) {
       res += this.service.executeBranch(loopBranch);
     }
