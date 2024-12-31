@@ -27,7 +27,7 @@ export class DecisionTreeService {
           currentBranch = eval(code) ? trueBranch : falseBranch;
           continue;
         } catch (error) {
-          return res + `Error evaluating condition: ${code} \n`;
+          return res + `Error evaluating condition: ${code} \n `;
         }
       }
 
