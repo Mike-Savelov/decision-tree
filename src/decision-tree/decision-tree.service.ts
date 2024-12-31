@@ -25,6 +25,7 @@ export class DecisionTreeService {
         try {
           // TODO: code needs to be checked for evil injections...
           currentBranch = eval(code) ? trueBranch : falseBranch;
+          if (!currentBranch) return res;
           continue;
         } catch (error) {
           return res + `Error evaluating condition: ${code} \n `;
